@@ -6,7 +6,7 @@ defmodule TextClient.Mixfile do
       app: :text_client,
       version: "0.1.0",
       elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env() == :prod,
       deps: deps()
     ]
   end
@@ -21,7 +21,7 @@ defmodule TextClient.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:hangman, in_umbrella: true},
+      {:hangman, in_umbrella: true}
     ]
   end
 end

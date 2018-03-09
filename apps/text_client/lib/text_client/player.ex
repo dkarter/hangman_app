@@ -40,10 +40,6 @@ defmodule TextClient.Player do
     |> play()
   end
 
-  defp make_move(game) do
-    game
-  end
-
   defp continue_with_message(game, msg) do
     IO.puts(msg)
     continue(game)
